@@ -1,15 +1,15 @@
 from django.conf.urls import url
 from django.urls import path
-from .front_views.front_login_views import LoginView
-from .front_views.front_registration_views import RegistrationView
-from .front_views.front_logout_view import LogoutView
-from .front_views.front_reset_password import ResetPasswordView
-from .front_views.front_reset_password_sended import ResetPasswordSendedView
-from .front_views.front_registration_success import RegistrationSuccess
-from .front_views.front_confirmation_reset_password import ConfirmationResetPassword
-from .front_views.front_reset_password_success import ResetPasswordSuccess
-from .front_views.front_confirmation_registration import ConfirmationRegistration
-from .front_views.front_confirmation_registration_success import ConfirmationRegistrationSuccess
+from accounts.front_views.front_login_views import LoginView
+from accounts.front_views.front_registration_views import RegistrationView
+from accounts.front_views.front_logout_view import LogoutView
+from accounts.front_views.front_reset_password import ResetPasswordView
+from accounts.front_views.front_reset_password_sended import ResetPasswordSendedView
+from accounts.front_views.front_registration_success import RegistrationSuccess
+from accounts.front_views.front_confirmation_reset_password import ConfirmationResetPassword
+from accounts.front_views.front_reset_password_success import ResetPasswordSuccess
+from accounts.front_views.front_confirmation_registration import ConfirmationRegistration
+from accounts.front_views.front_confirmation_registration_success import ConfirmationRegistrationSuccess
 
 
 urlpatterns = [

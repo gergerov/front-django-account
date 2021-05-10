@@ -1,4 +1,4 @@
-from ..models import AccountConfirmation
+from accounts.models import AccountConfirmation
 from django.contrib.auth.models import User
 
 

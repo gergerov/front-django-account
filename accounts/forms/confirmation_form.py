@@ -2,7 +2,7 @@ from django import forms
 from django.contrib.auth.models import User
 from crispy_forms.helper import FormHelper
 from crispy_forms.layout import Layout, Fieldset, HTML
-from ..forms import base_elements as b
+from accounts.forms import base_elements as b
 
 
 class ConfirmationResetPasswordForm(forms.Form):

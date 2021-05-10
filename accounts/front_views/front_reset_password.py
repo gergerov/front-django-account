@@ -3,8 +3,8 @@ from django.views import View
 from django.contrib.auth.models import User
 
 
-from ..forms.reset_password_form import UserResetPasswordSendForm
-from ..services.reset_password import reset_password
+from accounts.forms.reset_password_form import UserResetPasswordSendForm
+from accounts.services.reset_password import reset_password
 
 
 class ResetPasswordView(View):

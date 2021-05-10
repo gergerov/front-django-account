@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.views import View
 from django.contrib.auth import authenticate, login
 
-from ..forms.login_form import LoginForm
+from accounts.forms.login_form import LoginForm
 
 
 class LoginView(View):

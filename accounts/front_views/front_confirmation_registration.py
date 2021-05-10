@@ -1,15 +1,15 @@
 from django.shortcuts import render, redirect
 from django.views import View
 
-from ..forms.confirmation_form import ConfirmationRegistrationForm
+from accounts.forms.confirmation_form import ConfirmationRegistrationForm
 
-from ..validators.base import *
-from ..validators.confirmations_validators import *
+from accounts.validators.base import *
+from accounts.validators.confirmations_validators import *
 
-from ..services.confirmation import accept_confirmation
-from ..services.activate_user import activate_user
+from accounts.services.confirmation import accept_confirmation
+from accounts.services.activate_user import activate_user
 
-from ..exceptions import *
+from accounts.exceptions import *
 
 
 class ConfirmationRegistration(View):

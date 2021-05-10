@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.views import View
-from ..forms.reset_password_sended import UserResetPasswordSendedForm
+from accounts.forms.reset_password_sended import UserResetPasswordSendedForm
 
 
 class ResetPasswordSendedView(View):

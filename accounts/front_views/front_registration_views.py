@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.views import View
 
-from ..forms.user_registration_form import UserRegistrationForm
-from ..services.registration import registration_user
+from accounts.forms.user_registration_form import UserRegistrationForm
+from accounts.services.registration import registration_user
 
 
 class RegistrationView(View):

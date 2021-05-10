@@ -1,4 +1,4 @@
-from ..exceptions import *
+from accounts.exceptions import *
 
 lat_chars_and_nums = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.'
 

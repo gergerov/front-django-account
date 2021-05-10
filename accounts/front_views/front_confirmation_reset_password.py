@@ -1,15 +1,15 @@
 from django.shortcuts import render, redirect
 from django.views import View
 
-from ..forms.confirmation_form import ConfirmationResetPasswordForm
+from accounts.forms.confirmation_form import ConfirmationResetPasswordForm
 
-from ..validators.base import *
-from ..validators.confirmations_validators import *
+from accounts.validators.base import *
+from accounts.validators.confirmations_validators import *
 
-from ..services.confirmation import accept_confirmation
-from ..services.accept_reset_password import accept_reset_password
+from accounts.services.confirmation import accept_confirmation
+from accounts.services.accept_reset_password import accept_reset_password
 
-from ..exceptions import *
+from accounts.exceptions import *
 
 
 class ConfirmationResetPassword(View):

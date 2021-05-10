@@ -1,5 +1,5 @@
-from ..exceptions import *
-from ..models import AccountConfirmation
+from accounts.exceptions import *
+from accounts.models import AccountConfirmation
 
 
 def is_exists_token(username, token, confirmation_type):

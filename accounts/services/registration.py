@@ -1,5 +1,5 @@
 from django.contrib.auth.models import User
-from ..models import AccountConfirmation
+from accounts.models import AccountConfirmation
 
 
 def registration_user(username, password, email):

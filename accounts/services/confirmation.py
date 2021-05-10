@@ -1,4 +1,4 @@
-from ..models import AccountConfirmation
+from accounts.models import AccountConfirmation
 
 
 def accept_confirmation(username, token, confirmation_type):
