@@ -33,7 +33,7 @@ class RegistrationView(View):
             return redirect('front_registration_success')
 
         except Exception as e:
-            form = UserRegistrationForm()
-            form.add_error(None, str(e))
+            form = UserRegistrationForm(request.POST)
+            form.add_error(field='username', error=str(e))
 
         return render(request, self.template, {'form': form, 'title': self.title})
