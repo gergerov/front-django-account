@@ -1,0 +1,13 @@
+{% extends "account/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+        {% csrf_token %}
+            <div class="jumbotron">
+              <p class="lead">You have completed the registration!</p>
+              <hr class="my-4">
+                <p>Authorization data has been successfully confirmed</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="{% url 'front_login' %}" role="button">Login</a>
+                    </p>
+            </div>
+{% endblock %}
