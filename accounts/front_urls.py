@@ -15,13 +15,13 @@ from accounts.front_views.front_confirmation_registration_success import Confirm
 urlpatterns = [
 
     url(
-        r'^front/registration$'
+        r'^registration$'
         , view=RegistrationView.as_view()
         , name="front_registration"
     ),
 
     url(
-        r'^front/registration_success$'
+        r'^registration_success$'
         , view=RegistrationSuccess.as_view()
         , name="front_registration_success"
     ),
