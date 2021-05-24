@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+﻿from django.shortcuts import render, redirect
 from django.views import View
 
 from accounts.forms.user_registration_form import UserRegistrationForm
@@ -11,7 +11,7 @@ class RegistrationView(View):
 
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
-            return redirect('/')
+            return redirect('home')
         else:
             registration_form = UserRegistrationForm()
             return render(
@@ -21,9 +21,9 @@ class RegistrationView(View):
 
     def post(self, request, *args, **kwargs):
         try:
-            # отправим в корень, если авторизован
+            # отправим домой, если авторизован
             if request.user.is_authenticated:
-                return redirect('/')
+                return redirect('home')
 
             registration_user(
                 username=request.POST['username']

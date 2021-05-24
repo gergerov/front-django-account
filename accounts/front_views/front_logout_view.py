@@ -7,7 +7,7 @@ class LogoutView(View):
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
             logout(request)
-            return redirect('/')
+            return redirect('home')
         if not request.user.is_authenticated:
             logout(request)
-            return redirect('/')
+            return redirect('home')

@@ -18,7 +18,7 @@ registration_link = HTML(
 home_link = HTML(
     '<div class="row p-1 m-1 p-1 t-1 b-1 l-1 r-1 x-1 y-1" >'
     '<a class="btn btn-light btn-block" '
-    'href="/">Home</a>'
+    'href="{%url "home" %}" %}">Home</a>'
     '</div>'
 )
 

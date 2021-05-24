@@ -12,7 +12,7 @@ class LoginView(View):
     def get(self, request, *args, **kwargs):
 
         if request.user.is_authenticated:
-            return redirect('/')
+            return redirect('home')
         else:
             form = LoginForm()
             return render(
